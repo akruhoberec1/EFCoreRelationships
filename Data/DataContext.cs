@@ -1,4 +1,5 @@
-﻿using EFCoreRelationships.Models;
+﻿
+using EFCoreRelationships.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EFCoreRelationships.Data
@@ -10,7 +11,8 @@ namespace EFCoreRelationships.Data
 
         }
 
-        public DbSet<VehicleMake> VehicleMakes { get; set; }    
+        public DbSet<VehicleMake> VehicleMakes { get; set; }
+        public DbSet<VehicleModel> VehicleModels { get; set; }
 
 
     }
