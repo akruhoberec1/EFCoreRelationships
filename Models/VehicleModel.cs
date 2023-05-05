@@ -1,8 +1,11 @@
-﻿namespace EFCoreRelationships.Models
+﻿using System.Text.Json.Serialization;
+
+namespace EFCoreRelationships.Models
 {
     public class VehicleModel
     {
-        public int Id { get; set; } 
+        public int Id { get; set; }
+        [JsonIgnore]
         public VehicleMake VehicleMake { get; set; }    
         public int VehicleMakeId { get; set; } 
         public string Name { get; set; } = string.Empty;
