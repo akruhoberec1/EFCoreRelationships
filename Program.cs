@@ -1,5 +1,5 @@
-using EFCoreRelationships.Data;
-using Microsoft.EntityFrameworkCore;
+global using EFCoreRelationships.Data;
+global using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
